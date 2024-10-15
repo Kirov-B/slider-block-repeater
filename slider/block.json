@@ -1,0 +1,19 @@
+{
+  "name": "acf/sliderrepeater",
+  "title": "Slider Repeater",
+  "description": "Slider Repeater block",
+  "style": ["file:./slider.css", "slick", "slick-theme"],
+  "script": ["file:./slider.js"],
+  "category": "media",
+  "icon": "images-alt2",
+  "keywords": ["slider", "slideshow", "carousel"],
+  "supports": {
+    "anchor": true,
+    "jsx": false
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "slider.php"
+  },
+  "align": "full"
+}
