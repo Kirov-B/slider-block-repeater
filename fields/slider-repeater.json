@@ -1,0 +1,228 @@
+[
+  {
+    "key": "group_670a4d80cef64",
+    "title": "Slider Block Repeater",
+    "fields": [
+      {
+        "key": "field_670a4d817e4fa",
+        "label": "Slider Gallery",
+        "name": "slider_gallery",
+        "aria-label": "",
+        "type": "repeater",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 0,
+        "max": 0,
+        "collapsed": "",
+        "button_label": "Add Row",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_670a4e517e4fb",
+            "label": "Image",
+            "name": "image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium",
+            "parent_repeater": "field_670a4d817e4fa"
+          },
+          {
+            "key": "field_670a4e6d7e4fc",
+            "label": "Overlay Text",
+            "name": "overlay_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "parent_repeater": "field_670a4d817e4fa"
+          }
+        ]
+      },
+      {
+        "key": "field_670a6860716db",
+        "label": "Slider Config",
+        "name": "",
+        "aria-label": "",
+        "type": "accordion",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "open": 0,
+        "multi_expand": 0,
+        "endpoint": 0
+      },
+      {
+        "key": "field_670a68f6716dc",
+        "label": "Sliders To Show",
+        "name": "sliders_to_show",
+        "aria-label": "",
+        "type": "number",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "min": "",
+        "max": "",
+        "allow_in_bindings": 0,
+        "placeholder": "",
+        "step": "",
+        "prepend": "",
+        "append": ""
+      },
+      {
+        "key": "field_670a6946716de",
+        "label": "Slider To Show Tablet",
+        "name": "slider_to_show_tablet",
+        "aria-label": "",
+        "type": "number",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "min": "",
+        "max": "",
+        "allow_in_bindings": 0,
+        "placeholder": "",
+        "step": "",
+        "prepend": "",
+        "append": ""
+      },
+      {
+        "key": "field_670a693b716dd",
+        "label": "Slider To Show Mobile",
+        "name": "slider_to_show_mobile",
+        "aria-label": "",
+        "type": "number",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "min": "",
+        "max": "",
+        "allow_in_bindings": 0,
+        "placeholder": "",
+        "step": "",
+        "prepend": "",
+        "append": ""
+      },
+      {
+        "key": "field_670a69bb716df",
+        "label": "Show Arrows",
+        "name": "show_arrows",
+        "aria-label": "",
+        "type": "true_false",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "message": "",
+        "default_value": 0,
+        "allow_in_bindings": 0,
+        "ui": 0,
+        "ui_on_text": "",
+        "ui_off_text": ""
+      },
+      {
+        "key": "field_670a69c5716e0",
+        "label": "Show Dots",
+        "name": "show_dots",
+        "aria-label": "",
+        "type": "true_false",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "message": "",
+        "default_value": 0,
+        "allow_in_bindings": 0,
+        "ui": 0,
+        "ui_on_text": "",
+        "ui_off_text": ""
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf/sliderrepeater"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+  }
+]
