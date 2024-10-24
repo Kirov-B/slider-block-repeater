@@ -2,9 +2,10 @@
 
 /**
  * Plugin Name:       Slider Block Repeater
- * Description:       A custom block for creating sliders custom fields.
+ * Description:       A custom block for creating sliders with custom fields.
  * Version:           1.0.0
  * Author:            Bone Kirov
+ * Requires Plugins:   advanced-custom-fields-pro
  *
  * @package           slider-repeater
  */
@@ -83,34 +84,4 @@ add_action('enqueue_block_assets', 'digicube_slider_register_scripts');
 
 
 
-/**
- * Modify the save path for ACF JSON files.
- *
- * This function changes the default save location for ACF JSON files to a custom directory
- * within the plugin's folder. This is useful for version control and portability of ACF field groups.
- *
- * @param string $path The original save path.
- * @return string The modified save path.
- */
-function digicube_json_save_point($path)
-{
-	return plugin_dir_path(__FILE__) . 'fields';
-}
-
-/**
- * Modify the load paths for ACF JSON files.
- *
- * This function changes the default load location for ACF JSON files to a custom directory
- * within the plugin's folder. It also removes the original load path if needed.
- *
- * @param array $paths The original load paths.
- * @return array The modified load paths.
- */
-function digicube_json_load_point($paths)
-{
-	// Append your custom path
-	$paths[] = plugin_dir_path(__FILE__) . 'fields';
-
-	return $paths;
-}
-add_filter('acf/settings/load_json', 'digicube_json_load_point');
+require_once plugin_dir_path(__FILE__) . 'fields/fields.php';
