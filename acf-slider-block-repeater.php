@@ -94,7 +94,7 @@ add_action('enqueue_block_assets', 'digicube_slider_register_scripts');
  */
 function digicube_json_save_point($path)
 {
-	return plugin_dir_path(__FILE__) . '/fields/';
+	return plugin_dir_path(__FILE__) . 'fields';
 }
 
 /**
@@ -109,7 +109,7 @@ function digicube_json_save_point($path)
 function digicube_json_load_point($paths)
 {
 	// Append your custom path
-	$paths[] = plugin_dir_path(__FILE__) . '/fields/';
+	$paths[] = plugin_dir_path(__FILE__) . 'fields';
 
 	return $paths;
 }
